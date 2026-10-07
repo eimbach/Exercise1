@@ -42,8 +42,10 @@ public class CardTrick {
         // Then loop through the cards in the array to see if there's a match.
         System.out.print("Please select a card value from 1 to 13 (1 - Ace, 11 - Jack, 12 - Queen, 13 - King): ");
         int cardVal = scanner.nextInt();
-        System.out.print("Now please select a suit for this card (1 - Hearts, 2 - Diamonds, 3 - Clubs, 4 - Spades): ");
+        System.out.print("Now please select a suit for this card (1 - Hearts, 2 - Diamonds, 3 - Spades, 4 - Clubs): ");
         int suitVal = scanner.nextInt();
+        
+        suitVal = suitVal - 1;
         
         Card guessedCard = new Card();
         
