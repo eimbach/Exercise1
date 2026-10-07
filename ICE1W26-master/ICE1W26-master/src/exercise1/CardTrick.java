@@ -18,16 +18,15 @@ import java.util.Random;
 
         for (int i = 0; i < hand.length; i++) {
             Card card = new Card();
-            card.setValue((int)(Math.random()*13)+1);
-            int randSuit = (int)(Math.random()*4)+1)
+            
            
-            card.setSuit();
             //card.setValue(insert call to random number generator here)
             // 
+            card.setValue((Math.random()*13)+1);
             //card.setSuit(Card.SUITS[insert call to random number between 0-3 here])
             // Hint: You can use Random -> random.nextInt(n) to get a random number between 0 and n-1 (inclusive)
             //       Don't worry about duplicates at this point
-            
+            card.setSuit(Card.SUITS[(Math.random()*4)+1]);   
         }
 
         // insert code to ask the user for Card value and suit, create their card

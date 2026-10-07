@@ -11,21 +11,6 @@ package exercise1;
  * @author Paul Bonenfant May 2020
  */
 public class Card {
-   public String suitConvert(int suitNum) {
-        switch (suitNum) {
-                case 1:
-                    return "Hearts";
-                case 2:
-                    return "Diamonds";
-                case 3:
-                    return "Spades";
-                case 4:
-                    return "Clubs";
-                default:
-                    System.out.println("Invalid input.");
-                    return "Invalid";
-            }
-   }
     
    private String suit; //clubs, spades, diamonds, hearts
    private int value;//1-13
