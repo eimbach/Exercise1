@@ -8,8 +8,8 @@ import java.util.Random;
  * It then searches the array of cards for the match to the user's card. 
  * To be used as starting code in Exercise
  *
- * @author dancye
- * @author Paul Bonenfant Jan 25, 2022 
+ * @author bachal
+ * @author Alan Bach October 6th, 2026 
  */
 public class CardTrick {
     
@@ -73,7 +73,7 @@ public class CardTrick {
     /**
      * A simple method to print out personal information. Follow the instructions to 
      * replace this information with your own.
-     * @author Paul Bonenfant Jan 2022
+     * @author Alan Bach October 6th 2026
      */
     private static void printInfo() {
     
