@@ -30,7 +30,7 @@ public class CardTrick {
             hand[i] = card;
 
 			// Testing purposes of printing the cards in the hand.
-			System.out.println("Card" + (i+1) + jkqaConv(hand[i].getValue()) + " of " + hand[i].getSuit() + " has been pulled into the hand.");
+			System.out.println("Card " + (i+1) + " " + jkqaConv(hand[i].getValue()) + " of " + hand[i].getSuit() + " has been pulled into the hand.");
 			
         }
         // insert code to ask the user for Card value and suit, create their card
