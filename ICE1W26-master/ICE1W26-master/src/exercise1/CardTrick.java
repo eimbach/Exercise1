@@ -1,5 +1,7 @@
 package exercise1;
 
+import java.util.Scanner;
+
 /**
  * A class that fills a hand of 7 cards with random Card Objects and then asks the user to pick a card.
  * It then searches the array of cards for the match to the user's card. 
@@ -30,7 +32,7 @@ public class CardTrick {
         //       1 for Hearts, 2 for Diamonds, etc. (remember arrays are 0-based though)
         // 
         // Then loop through the cards in the array to see if there's a match.
-        
+        System.out.print("Please select a card value from 1 to 13 (1 - Ace, 11 - Jack, 12 - Queen, 13 - King)");
         // If the guess is successful, invoke the printInfo() method below.
         
     }
