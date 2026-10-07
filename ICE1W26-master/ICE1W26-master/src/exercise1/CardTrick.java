@@ -19,8 +19,6 @@ public class CardTrick {
 
         for (int i = 0; i < hand.length; i++) {
             Card card = new Card();
-            
-           
             //card.setValue(insert call to random number generator here)
             // 
             card.setValue((int)(Math.random()*13)+1);
@@ -28,8 +26,9 @@ public class CardTrick {
             // Hint: You can use Random -> random.nextInt(n) to get a random number between 0 and n-1 (inclusive)
             //       Don't worry about duplicates at this point
             card.setSuit(Card.SUITS[(int)(Math.random()*3)]);   
+            
+            hand[i] = card;
         }
-
         // insert code to ask the user for Card value and suit, create their card
         // and search the hand here. 
         // Hint: You can ask for values 1 to 10, and then
@@ -48,10 +47,15 @@ public class CardTrick {
         guessedCard.setSuit(Card.SUITS[suitVal]);
         
         for (int i = 0; i < hand.length; i++) {
-            if (hand[i].getSuit().equals(guessedCard.getSuit()))
+            boolean guessFlag = false;
+            if (hand[i].getSuit().equals(guessedCard.getSuit())){
                 if (hand[i].getValue() == guessedCard.getValue()) {
                     printInfo();
                 }
+            }
+            if (i == hand.length-1 && guessFlag==false){
+                System.out.println("Sorry, your card " + guessedCard.getSuit() + " of " + guessedCard.getValue() + " guess was not present in the hand.");
+            }
         }
         
         // If the guess is successful, invoke the printInfo() method below.
