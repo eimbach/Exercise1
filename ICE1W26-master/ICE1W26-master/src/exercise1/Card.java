@@ -10,7 +10,10 @@ package exercise1;
  * @author dancye
  * @author Paul Bonenfant May 2020
  */
+
+
 public class Card {
+       
     
    private String suit; //clubs, spades, diamonds, hearts
    private int value;//1-13
@@ -43,4 +46,5 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }  
+   
 }

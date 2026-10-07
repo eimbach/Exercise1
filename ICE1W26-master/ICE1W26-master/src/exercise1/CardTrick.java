@@ -15,7 +15,7 @@ public class CardTrick {
     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Card[] hand = new Card[7];
+        Card[] hand = new Card[50];
 
         for (int i = 0; i < hand.length; i++) {
             Card card = new Card();
@@ -25,7 +25,7 @@ public class CardTrick {
             //card.setSuit(Card.SUITS[insert call to random number between 0-3 here])
             // Hint: You can use Random -> random.nextInt(n) to get a random number between 0 and n-1 (inclusive)
             //       Don't worry about duplicates at this point
-            card.setSuit(Card.SUITS[(int)(Math.random()*3)]);   
+            card.setSuit(Card.SUITS[(int)(Math.random()*3)+1]);   
             
             hand[i] = card;
         }
@@ -51,10 +51,11 @@ public class CardTrick {
             if (hand[i].getSuit().equals(guessedCard.getSuit())){
                 if (hand[i].getValue() == guessedCard.getValue()) {
                     printInfo();
+                    guessFlag = true;
                 }
             }
             if (i == hand.length-1 && guessFlag==false){
-                System.out.println("Sorry, your card " + guessedCard.getSuit() + " of " + guessedCard.getValue() + " guess was not present in the hand.");
+                System.out.println("Sorry, your card \"" + jkqaConv(guessedCard.getValue()) + "\" of \"" + guessedCard.getSuit() + "\" guess was not present in the hand.");
             }
         }
         
@@ -90,5 +91,27 @@ public class CardTrick {
         
     
     }
+    
+       public static String jkqaConv (int val){
+       String str;
+       switch (val) {      
+           case 1:
+               str = "Ace";
+               break;
+           case 11:
+               str = "Jack";
+               break;
+           case 12:
+               str = "Queen";
+               break;
+           case 13:
+               str = "King";
+               break;
+           default:
+               str = String.valueOf(val);
+               break;     
+       }
+       return str;
+   }
 
 }
