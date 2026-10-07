@@ -11,6 +11,7 @@ import java.util.Random;
  * @author dancye
  * @author Paul Bonenfant Jan 25, 2022 
  */
+public class CardTrick {
     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
