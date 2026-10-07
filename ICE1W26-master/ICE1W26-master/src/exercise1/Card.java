@@ -11,7 +11,16 @@ package exercise1;
  * @author Paul Bonenfant May 2020
  */
 public class Card {
-
+   public static String suitConvert(int suitNum) {
+        switch (randSuit) {
+                case 1:
+                    
+                case 2:
+                case 3:
+                case 4:
+            }
+   }
+    
    private String suit; //clubs, spades, diamonds, hearts
    private int value;//1-13
 
