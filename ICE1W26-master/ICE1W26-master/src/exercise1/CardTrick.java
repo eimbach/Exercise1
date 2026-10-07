@@ -15,7 +15,7 @@ public class CardTrick {
     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Card[] hand = new Card[50];
+        Card[] hand = new Card[7];
 
         for (int i = 0; i < hand.length; i++) {
             Card card = new Card();
@@ -52,6 +52,7 @@ public class CardTrick {
                 if (hand[i].getValue() == guessedCard.getValue()) {
                     printInfo();
                     guessFlag = true;
+                    break;
                 }
             }
             if (i == hand.length-1 && guessFlag==false){
