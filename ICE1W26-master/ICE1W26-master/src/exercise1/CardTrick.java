@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class CardTrick {
     
     public static void main(String[] args) {
-        
+        Scanner scanner = new Scanner(System.in);
         Card[] hand = new Card[7];
 
         for (int i = 0; i < hand.length; i++) {
@@ -33,6 +33,9 @@ public class CardTrick {
         // 
         // Then loop through the cards in the array to see if there's a match.
         System.out.print("Please select a card value from 1 to 13 (1 - Ace, 11 - Jack, 12 - Queen, 13 - King)");
+        int cardVal = scanner.nextInt();
+        System.out.print("Now please select a suit for this card (1 - Hearts, 2 - Diamonds, 3 - Clubs, 4 - Spades)");
+        int suitVal = scanner.nextInt();
         // If the guess is successful, invoke the printInfo() method below.
         
     }
