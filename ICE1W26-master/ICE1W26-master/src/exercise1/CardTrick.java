@@ -62,7 +62,7 @@ public class CardTrick {
                 }
             }
             if (i == hand.length-1 && guessFlag==false){
-                System.out.println("Sorry, your card \"" + jkqaConv(guessedCard.getValue()) + "\" of \"" + guessedCard.getSuit() + "\" guess was not present in the hand.");
+                System.out.println("Sorry, your guess of card: \"" + jkqaConv(guessedCard.getValue()) + "\" of \"" + guessedCard.getSuit() + "\" was not present in the hand.");
             }
         }
         
